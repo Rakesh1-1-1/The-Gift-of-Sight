@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>profile table</title>
+   <style>
+    table,th,td{
+    border:1px solid;
+    }
+    img{
+    height:20%;
+    width:20%;
+    }
+  </style>
+</head>
+<body>
+<table>
+  <tr>
+    <th>name</th>
+    <th>age</th>
+    <th>image</th>
+    <th>address</th>
+    <th>phone</th>
+    <th>email</th>
+    <th>username</th>
+  </tr>
+
+  <tr>
+    <td>{{ re.name }}</td>
+    <td>{{ re.age }}</td>
+    <td><img src="{{ re.image.url }}"></td>
+    <td>{{ re.address }}</td>
+    <td>{{ re.phone }}</td>
+    <td>{{ re.email }}</td>
+    <td>{{ re.username }}</td>
+
+  </tr>
+</table>
+
+</body>
+</html>
